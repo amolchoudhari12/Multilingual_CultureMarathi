@@ -1,0 +1,10 @@
+C:\Users\AmolPriya\Documents\Visual Studio 2010\Projects\MultiLanguage\CultureMarathi\CultureMarathi\bin\CultureMarathi.dll
+C:\Users\AmolPriya\Documents\Visual Studio 2010\Projects\MultiLanguage\CultureMarathi\CultureMarathi\bin\CultureMarathi.pdb
+C:\Users\AmolPriya\Documents\Visual Studio 2010\Projects\MultiLanguage\CultureMarathi\CultureMarathi\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AmolPriya\Documents\Visual Studio 2010\Projects\MultiLanguage\CultureMarathi\CultureMarathi\obj\Debug\CultureMarathi.dll
+C:\Users\AmolPriya\Documents\Visual Studio 2010\Projects\MultiLanguage\CultureMarathi\CultureMarathi\obj\Debug\CultureMarathi.pdb
+C:\Vilani\POCs\CultureMarathi\CultureMarathi\bin\CultureMarathi.dll
+C:\Vilani\POCs\CultureMarathi\CultureMarathi\bin\CultureMarathi.pdb
+C:\Vilani\POCs\CultureMarathi\CultureMarathi\obj\Debug\ResolveAssemblyReference.cache
+C:\Vilani\POCs\CultureMarathi\CultureMarathi\obj\Debug\CultureMarathi.dll
+C:\Vilani\POCs\CultureMarathi\CultureMarathi\obj\Debug\CultureMarathi.pdb

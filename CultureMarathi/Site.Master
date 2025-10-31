@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.SiteMaster" %>
+
+<%@ Register Src="Header.ascx" TagName="Header" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            height: 83px;
+        }
+        .style2
+        {
+            height: 83px;
+            width: 509px;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="loginDisplay">
+                <table>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="style1">
+                                        <div class="title">
+                                            <h1>
+                                                <asp:Literal ID="Literal1" runat="server" Text="<%$Resources:Site, AppTitle%>" />
+                                            </h1>
+                                        </div>
+                                    </td>
+                                    <td class="style2">
+                                        <uc1:Header ID="Header1" runat="server" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                                <AnonymousTemplate>
+                                    [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>
+                                    ]
+                                </AnonymousTemplate>
+                                <LoggedInTemplate>
+                                    Welcome <span class="bold">
+                                        <asp:LoginName ID="HeadLoginName" runat="server" />
+                                    </span>! [
+                                    <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out"
+                                        LogoutPageUrl="~/" />
+                                    ]
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <%--  <div class="tabmenu">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="False"
+                    IncludeStyleBlock="False" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/UI/Home/Home.aspx" Text="<%$Resources:Site, Home %> "
+                            ImageUrl="~/Styles/Home.png" />
+                        <asp:MenuItem NavigateUrl="~/UI/Car/Car.aspx" Text="<%$Resources:Site, Car %>" ImageUrl="~/Styles/Car.png" />
+                        <asp:MenuItem NavigateUrl="~/UI/Mobile/Mobile.aspx" Text="<%$Resources:Site, Mobile %>"
+                            ImageUrl="~/Styles/Mobile-png.png" />
+                        <asp:MenuItem NavigateUrl="~/UI/OldThings/OldThings.aspx" Text="<%$Resources:Site, OldThings %>" ImageUrl="~/Styles/OldThings.png" />
+                        <asp:MenuItem NavigateUrl="~/UI/Experts/Experts.aspx" Text="<%$Resources:Site, Expert %>" ImageUrl="~/Styles/Experts.png">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>--%>
+            <div id="menu_tab">
+                <div class="left_menu_corner">
+                </div>
+                <table>
+                    <tr align="center">
+                        <td>
+                            <asp:ImageButton ID="ImageButton1" AlternateText="Home" runat="server" ImageUrl="~/Styles/Home.png" />
+                            <br />
+                            <span>Home</span>
+                        </td>
+                        <td>
+                            <asp:ImageButton ID="ImageButton2" AlternateText="Home" runat="server" ImageUrl="~/Styles/Car.png" />
+                            <br />
+                            <span>Car</span>
+                        </td>
+                        <td>
+                            <asp:ImageButton ID="ImageButton3" AlternateText="Home" runat="server" ImageUrl="~/Styles/mob.png"
+                                Height="51px" Width="43px" />
+                            <br />
+                            <span>Mobile</span>
+                        </td>
+                        <td>
+                            <asp:ImageButton ID="ImageButton4" AlternateText="Home" runat="server" ImageUrl="~/Styles/user.png"
+                                Height="45px" Width="38px" />
+                            <br />
+                            <span>Experts</span>
+                        </td>
+                        <td>
+                            <asp:ImageButton ID="ImageButton5" AlternateText="Home" runat="server" ImageUrl="~/Styles/old.png"
+                                Height="56px" Width="45px" />
+                            <br />
+                            <span>Old things</span>
+                        </td>
+                    </tr>
+                </table>
+                <%--<ul class="menu">
+                         
+                         <li><a href="UI/Home/Home.aspx" class="nav1"> Home </a><br />Home</li>
+                         <li class="divider"></li>
+                         <li><a href="#" class="nav2">Car</a></li>
+                         <li class="divider"></li>
+                         <li><a href="#" class="nav3">Mobile</a></li>
+                         <li class="divider"></li>
+                         <li><a href="#" class="nav4">Old Things</a></li>
+                         <li class="divider"></li>
+                         <li><a href="#" class="nav5">Experts</a></li>
+                         <li class="divider"></li>                         
+                         <li><a href="About.aspx" class="nav6">About Us</a></li>
+                         <li class="divider"></li>
+                    </ul>--%>
+                <%-- <ul>
+                     
+                         <li>Home</li>
+                         <li class="divider"></li>
+                         <li>Car</a></li>
+                         <li class="divider"></li>
+                         <li><a href="#" class="nav3">Mobile</a></li>
+                         <li class="divider"></li>
+                         <li><a href="#" class="nav4">Old Things</a></li>
+                         <li class="divider"></li>
+                         <li><a href="#" class="nav5">Experts</a></li>
+                         <li class="divider"></li>                         
+                         <li><a href="About.aspx" class="nav6">About Us</a></li>
+                         <li class="divider"></li>
+                    </ul>--%>
+                <div class="right_menu_corner">
+                </div>
+            </div>
+            <!-- end of menu tab -->
+            <div class="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </form>
+</body>
+</html>
