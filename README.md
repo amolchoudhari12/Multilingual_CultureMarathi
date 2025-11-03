@@ -1,1 +1,1 @@
-# Locallization of dynamic label text in the website
+# Localization  of dynamic label text in the website
